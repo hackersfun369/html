@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web Browser</title>
+</head>
+<body>
+    <input type="text" id="searchInput" placeholder="Search on Google">
+    <button onclick="searchGoogle()">Search</button>
+    <iframe id="browserFrame" width="100%" height="600"></iframe>
+
+    <script>
+        function setDefaultPage() {
+            document.getElementById("browserFrame").src = "https://www.google.com";
+        }
+
+        function searchGoogle() {
+            var query = document.getElementById("searchInput").value;
+            var searchURL = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            document.getElementById("browserFrame").src = searchURL;
+        }
+
+        window.onload = setDefaultPage;
+    </script>
+</body>
+</html>

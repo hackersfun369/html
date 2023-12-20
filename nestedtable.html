@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>nested table</title>
+</head>
+<body>
+    <h1 style="text-align: left ;">Employee information</h1>
+    <hr />
+    <table style="padding: 10px;border:1px;">
+     <caption style="text-align: left;"><h2>Employee information</h2></caption>
+      <tr>
+        <th style="padding: 10px;border:1px ;background-color: #f0f0f0">Name</th>
+        <th style="padding: 10px;border:1px ;background-color: #f0f0f0">Age</th>
+        <th style="padding: 10px;border:1px ;background-color: #f0f0f0">Gender</th>
+        <th style="padding: 10px;border:1px ;background-color: #f0f0f0">Department</th>
+      </tr>
+      <tr>
+        <td style="padding: 10px;border:1px solid #ccc">sathya</td>
+        <td style="padding: 10px;border:1px solid #ccc">19</td>
+        <td style="padding: 10px;border:1px solid #ccc">Male</td>
+        <td style="padding: 10px;border:1px solid #ccc">cse</td>
+      </tr>
+      <tr>
+        <td style="padding: 10px;border:1px solid #ccc">sathish</td>
+        <td style="padding: 10px;border:1px solid #ccc">19</td>
+        <td style="padding: 10px;border:1px solid #ccc">Male</td>
+        <td>
+            <!--Nested table-->
+        <table style="padding: 10px;border:1px solid #ccc">
+            <!--nested table head-->
+            <tr>
+            <th style="padding: 10px;border:1px solid #ccc">Department Name</th>
+            <th style="padding: 10px;border:1px solid #ccc">Manager</th>
+            <th style="padding: 10px;border:1px solid #ccc">Sales</th>
+            <th style="padding: 10px;border:1px solid #ccc">Department</th>
+            </tr>
+            <!--Nested table data-->
+                <tr>
+                    <td style="padding: 10px;border:1px solid #ccc">sathya</td>
+                    <td style="padding: 10px;border:1px solid #ccc">19</td>
+                    <td style="padding: 10px;border:1px solid #ccc">Male</td>
+                    <td style="padding: 10px;border:1px solid #ccc">cse</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 10px;border:1px solid #ccc">sathish</td>
+                    <td style="padding: 10px;border:1px solid #ccc">19</td>
+                    <td style="padding: 10px;border:1px solid #ccc">Male</td>
+                    <td style="padding: 10px;border:1px solid #ccc">Mechanical</td>
+                  </tr>
+        </table>
+      </td>
+      </tr>
+    </table>
+</body>
+</html>
